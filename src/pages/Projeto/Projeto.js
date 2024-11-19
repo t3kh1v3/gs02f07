@@ -1,25 +1,27 @@
 import './Projeto.css';
-import { Route, Routes, Link } from 'react-router-dom';
-import { Container, Row, Col, Button, Image, Card } from 'react-bootstrap';
+import { Route, Routes } from 'react-router-dom';
+import { Container, Row, Col, Image } from 'react-bootstrap';
+import { Navbar } from '../../components/Navbar.js'
+import { Footer } from '../../components/Footer.js'
 
-export const Header = () => {
+export const HeaderProject = () => {
     return (
-        <div className="home-background">
+        <div className="project-background">
             <Container fluid>
                 <Row className='justify-content-center'>
                     <Col className='div-seach' xs='4'>
                         <div className="content-container" id='op'>
-                            <p className="top-subtitle-opening">Conheça</p>
+                            <p className="top-subtitle-project">Conheça</p>
                         </div>
                     </Col>
                     <Col className='div-seach' xs='11'>
-                        <div className="title-container-opening">
-                            <h1 className="title-opening">Nosso Projeto</h1>
+                        <div className="title-container-project">
+                            <h1 className="title-project">Nosso Projeto</h1>
                         </div>
                     </Col>
                     <Col className='div-seach' xs='4'>
                         <div className="content-container" id='op'>
-                            <p className="subtitle-opening">Sustentare Inc</p>
+                            <p className="subtitle-project">Sustentare Inc</p>
                         </div>
                     </Col>
                 </Row>
@@ -51,31 +53,6 @@ export const OurProjects = () => {
     );
 };
 
-
-export const FinalHome = () => {
-    return (
-        <div className='final-home'>
-            <Container fluid>
-                <div className='final-home-content'>
-                    <div className='text-container'>
-                        <h1 className="title-final">Conheça Nossa História</h1>
-                        <Button as={ Link } to="/Sobre" variant="outline-dark" className="history-button">Sobre Nós</Button>
-                        <div className='socialContact'>
-                            <p className='email-tel'>
-                                contato@sustentare.com <br />
-                                4002-8922
-                            </p>
-                        </div>
-                    </div>
-                    <div className='image-container'>
-                        <Image className='aboutUsImg' src={require('../../assets/final.jpg')} />
-                    </div>
-                </div>
-            </Container>
-        </div>
-    );
-};
-
 export const Projeto = () => {
     return (
         <Routes>
@@ -83,9 +60,10 @@ export const Projeto = () => {
                 path="/"
                 element={
                     <>
-                        <Header />
+                        <Navbar backgroundColor="#231f20" iconColor="#fff"/>
+                        <HeaderProject />
                         <OurProjects />
-                        <FinalHome />
+                        <Footer backgroundColor="#231f20"/>
                     </>
                 }
             />

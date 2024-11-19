@@ -3,8 +3,8 @@
 /**********************************************/
 /*                  HEADER                    */
 /**********************************************/
-.home-background {
-    background-image: url('../../assets/powerline1.jpg');
+.Sobre-background {
+    background-image: url('../../assets/banner_sobre.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -13,7 +13,7 @@
     align-items: center;
 }
 
-.title-opening {
+.title-about {
     font-size: 8rem;
     font-family: "Space Grotesk", sans-serif;
     font-weight: 400;
@@ -30,7 +30,7 @@
     margin: 3em 0em -10em 0em;
 }
 
-.subtitle-opening {
+.subtitle-about {
     font-size: 3rem;
     font-family: "Space Grotesk", sans-serif;
     font-weight: 400;
@@ -39,7 +39,7 @@
 
 }
 
-.top-subtitle-opening {
+.top-subtitle-about {
     font-size: 2rem;
     font-family: "Space Grotesk", sans-serif;
     font-weight: 400;
@@ -54,7 +54,7 @@
 /**********************************************/
 .aboutUs {
     background-color: #231f20;
-    padding: 4em 2em;
+    padding: 0em 2em 2em 2em;
     color: white;
 }
 
@@ -73,10 +73,10 @@
     font-weight: 300;
 }
 
-.image-container {
+.image-container-aboutUs {
     display: flex;
     justify-content: center;
-    margin: 5em 0em 5em 5em;
+    margin: 1em 0em 1em 4em;
 }
 
 .aboutUsImg {
@@ -96,6 +96,149 @@
         margin-top: 2em;
     }
 }
+
+/**********************************************/
+/*             VICTIMS AFFECTED               */
+/**********************************************/
+
+.victimsAffected {
+    background-color: #fff7f1;
+    padding: 2em 2em;
+    color: black;
+}
+
+.title-victimsAffected {
+    font-size: 4rem;
+    margin-bottom: 1em;
+    font-family: "Space Grotesk", sans-serif;
+    font-weight: 400;
+}
+
+.text-victimsAffected {
+    font-size: 1.3rem;
+    line-height: 1.6;
+    margin-bottom: 1em;
+    font-family: "Space Grotesk", sans-serif;
+    font-weight: 400;
+}
+
+.button-vAff {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.vAff-button {
+    border-radius: 30px;
+    padding: 1em 5em;
+    font-weight: bold;
+    font-size: 1.2em;
+    color: black;
+    border: 2px solid black;
+    background-color: #ff9800;
+    margin-top: 1em;
+}
+
+.vAff-button:hover {
+    border: 2px solid #ff9800;
+    color: white;
+}
+
+.image-container-victimsAffected {
+    display: flex;
+    justify-content: center;
+    margin: 1em 0em 1em 4em;
+}
+
+.victimsAffectedImg {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    scale: 0.8;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .text-container {
+        text-align: center;
+    }
+
+    .victimsAffectedImg {
+        margin-top: 2em;
+    }
+}
+
+/**********************************************/
+/*                ABOUT PROJECT                    */
+/**********************************************/
+.aboutProject {
+    background-color: #231f20;
+    padding: 0em 2em 2em 2em;
+    color: white;
+}
+
+.title-aboutProject {
+    font-size: 4rem;
+    margin-bottom: 1em;
+    font-family: "Space Grotesk", sans-serif;
+    font-weight: 400;
+}
+
+.text-aboutProject {
+    font-size: 1.3rem;
+    line-height: 1.6;
+    margin-bottom: 1em;
+    font-family: "Space Grotesk", sans-serif;
+    font-weight: 300;
+}
+
+.button-aProj {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.aProj-button {
+    border-radius: 30px;
+    padding: 1em 5em;
+    font-weight: bold;
+    font-size: 1.2em;
+    color: white;
+    border: 2px solid white;
+    background-color: #ff9800;
+    margin-top: 1em;
+}
+
+.aProj-button:hover {
+    border: 2px solid black;
+    color: black;
+    background-color: white;
+}
+
+.image-container-aboutProject {
+    display: flex;
+    justify-content: center;
+    margin: 1em 0em 1em 4em;
+}
+
+.aboutProjectImg {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    scale: 0.8;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .text-container {
+        text-align: center;
+    }
+
+    .aboutProjectImg {
+        margin-top: 2em;
+    }
+}
+
 
 /**********************************************/
 /*               OUR TEAM                     */

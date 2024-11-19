@@ -1,20 +1,32 @@
 import './Home.css';
 import { Route, Routes, Link } from 'react-router-dom';
 import { Container, Row, Col, Button, Image, Card } from 'react-bootstrap';
+import { Navbar } from '../../components/Navbar.js'
+import '../../components/Navbar.css'
 
 export const Header = () => {
+    const title = "Sustentare";
+
     return (
         <div className="home-background">
         <Container fluid>
             <Row className='justify-content-center'>
             <Col className='div-seach' xs='10'>
                 <div className="title-container-opening">
-                    <h1 className="title-opening">Sustentare</h1>
+                    <h1 className="title-opening">
+                        {title.split("").map((letter, index) => (
+                        <span key={index} className="letter">
+                            {letter}
+                        </span>
+                        ))}
+                    </h1>
                 </div>
             </Col>
             <Col className='div-seach' xs='4'>
                 <div className="content-container" id='op'>
-                    <p className="subtitle-opening">Transformando o Futuro através da Energia Renovável</p>
+                    <p className="subtitle-opening">
+                        Transformando o Futuro através da Energia Renovável
+                    </p>
                     <Button as={ Link } to="/Projeto" variant="outline-dark" className="cta-button">Saiba mais</Button>
                 </div>
             </Col>
@@ -51,8 +63,6 @@ export const AboutUs = () => {
         </div>
     );
 };
-
-
 export const OurTeam = () => {
     return (
         <div className='ourTeam'>
@@ -106,7 +116,6 @@ export const OurTeam = () => {
             </div>
         )
 }
-
 export const VideoPitch = () => {
     return (
         <div className='home-video-pitch'>
@@ -131,7 +140,6 @@ export const VideoPitch = () => {
     </div>
     )
 }
-
 export const FinalHome = () => {
     return (
         <div className='final-home'>
@@ -155,10 +163,6 @@ export const FinalHome = () => {
         </div>
     );
 };
-
-
-
-
 export const Home = () => {
     return (
       <Routes>
@@ -166,6 +170,7 @@ export const Home = () => {
           path="/"
           element={
             <>
+              <Navbar backgroundColor="#231f20" iconColor="#231f20" />
               <Header />
               <AboutUs />
               <OurTeam />
@@ -179,4 +184,3 @@ export const Home = () => {
   };
   
   export default Home;
-

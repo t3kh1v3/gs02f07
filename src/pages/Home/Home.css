@@ -14,13 +14,28 @@
 }
 
 .title-opening {
-    font-size: 10rem;
+    font-size: clamp(10rem, 8vw, 6rem);
     font-family: "Space Grotesk", sans-serif;
     font-weight: 400;
     text-align: left;
     margin-bottom: 0.8em;
     text-align: center;
+    overflow: hidden;
 }
+
+.title-opening .letter {
+    display: inline-block;
+    opacity: 0;
+    transform: translateY(-50px);
+    animation: dropIn 1.4s ease forwards;
+  }
+
+  @keyframes dropIn {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
 
 .content-container {
     text-align: center;
@@ -31,15 +46,21 @@
 .subtitle-opening {
     font-size: 1.3rem;
     font-family: "Space Grotesk", sans-serif;    
-    font-weight: 400;
+    font-weight: 300;
     margin-bottom: 1em;
 }
+
 
 .cta-button {
     border-radius: 30px;
     padding: 1em 4em;
     font-weight: bold;
     font-size: 1.1em;
+    transition: transform 0.3s ease;
+}
+
+.cta-button:hover {
+    transform: scale(1.04);
 }
 
 /**********************************************/

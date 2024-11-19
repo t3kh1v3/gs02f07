@@ -13,7 +13,7 @@
     align-items: center;
 }
 
-.title-opening {
+.title-project {
     font-size: 8rem;
     font-family: "Space Grotesk", sans-serif;
     font-weight: 400;
@@ -30,7 +30,7 @@
     margin: 3em 0em -10em 0em;
 }
 
-.subtitle-opening {
+.subtitle-project {
     font-size: 3rem;
     font-family: "Space Grotesk", sans-serif;
     font-weight: 400;
@@ -39,7 +39,7 @@
 
 }
 
-.top-subtitle-opening {
+.top-subtitle-project {
     font-size: 2rem;
     font-family: "Space Grotesk", sans-serif;
     font-weight: 400;

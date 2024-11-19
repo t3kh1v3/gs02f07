@@ -1,0 +1,10 @@
+.footer {
+    background-color: white;
+    padding: 3em 3em;
+}
+
+.text-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
