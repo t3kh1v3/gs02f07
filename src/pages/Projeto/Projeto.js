@@ -1,8 +1,9 @@
 import './Projeto.css';
 import { Route, Routes } from 'react-router-dom';
+import { useEffect } from 'react';
 import { Container, Row, Col, Image } from 'react-bootstrap';
-import { Navbar } from '../../components/Navbar.js'
-import { Footer } from '../../components/Footer.js'
+import { Navbar } from '../../components/Navbar/Navbar.js'
+import { Footer } from '../../components/Footer/Footer.js'
 
 export const HeaderProject = () => {
     return (
@@ -54,6 +55,11 @@ export const OurProjects = () => {
 };
 
 export const Projeto = () => {
+    
+    useEffect(() => {
+    window.scrollTo(0, 0);
+    }, []);
+
     return (
         <Routes>
             <Route

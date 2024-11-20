@@ -2,8 +2,8 @@ import './Sobre.css';
 import { useEffect } from "react";
 import { Route, Routes, Link } from 'react-router-dom';
 import { Container, Row, Col, Button, Image } from 'react-bootstrap';
-import { Navbar } from '../../components/Navbar.js'
-import { Footer } from '../../components/Footer.js'
+import { Navbar } from '../../components/Navbar/Navbar.js'
+import { Footer } from '../../components/Footer/Footer.js'
 
 export const HeaderSobre = () => {
     return (

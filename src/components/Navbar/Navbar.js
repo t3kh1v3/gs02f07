@@ -3,8 +3,6 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React, { useState } from "react";
 import { Offcanvas } from 'react-bootstrap';
 
-
-
 export const Navbar = ({ backgroundColor = "#fff", iconColor = "#000" }) => {
   const [show, setShow] = useState(false);
 

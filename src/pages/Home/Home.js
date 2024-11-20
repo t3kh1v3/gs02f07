@@ -1,8 +1,7 @@
 import './Home.css';
 import { Route, Routes, Link } from 'react-router-dom';
 import { Container, Row, Col, Button, Image, Card } from 'react-bootstrap';
-import { Navbar } from '../../components/Navbar.js'
-import '../../components/Navbar.css'
+import { Navbar } from '../../components/Navbar/Navbar.js';
 
 export const Header = () => {
     const title = "Sustentare";
