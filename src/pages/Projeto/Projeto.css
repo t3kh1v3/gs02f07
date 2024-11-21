@@ -48,12 +48,18 @@
 }
 
 /**********************************************/
-/*                ABOUT US                    */
+/*                Sobre os Projetos           */
 /**********************************************/
 .our-project {
     background-color: #fff;
     padding: 4em 2em;
     color: black;
+}
+
+.our-project2 {
+    background-color: #231f20;
+    padding: 4em 2em;
+    color: white;
 }
 
 .title-OurProjects {
@@ -83,6 +89,8 @@
     border-radius: 10px;
     scale: 0.8;
 }
+
+
 
 /* Responsividade */
 @media (max-width: 768px) {
