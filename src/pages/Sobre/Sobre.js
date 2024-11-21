@@ -151,7 +151,6 @@ export const Sobre = () => {
                         <AboutUs />
                         <VictimsAffected />
                         <AboutProject />
-                        <Footer backgroundColor="#fff" iconColor="#fff"/>
                     </>
                 }
             />

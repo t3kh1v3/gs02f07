@@ -11,6 +11,8 @@
     height: 95vh;
     display: flex;
     align-items: center;
+    font-family: "Space Grotesk", sans-serif;
+    font-weight: 400;
 }
 
 .title-project {
@@ -50,6 +52,16 @@
 /**********************************************/
 /*                Sobre os Projetos           */
 /**********************************************/
+h1{
+    align-content: center;
+    text-align: center;
+    font-size: 3rem;
+    font-family: "Space Grotesk", sans-serif;
+    font-weight: 400;
+    margin-bottom: 1em;
+    margin-top: 2em;
+}
+
 .our-project {
     background-color: #fff;
     padding: 4em 2em;

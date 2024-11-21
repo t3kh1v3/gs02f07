@@ -31,9 +31,58 @@ export const HeaderProject = () => {
 
 export const OurProjects = () => {
     return (<>
-            <div className='our-project'>
+            <div className='our-project2'>
                 <Container fluid>
                     <Row className='justify-content-center align-items-center'>
+                        <h1 className="title-OurProjects">Energia que Transforma: Conectando Empresas, Comunidades e
+                            Sustentabilidade</h1>
+                        <Col xs={12} md={4} className='text-container'>
+
+                            <p className="text-OurProjects">
+                                Imagine um projeto que transforma comunidades, resolve problemas de infraestrutura
+                                elétrica e gera valor real para empresas. Nossa solução conecta grandes empresas e ONGs
+                                em iniciativas de eletrificação sustentável, com benefícios tangíveis para todos os
+                                envolvidos. </p>
+                            <p className="text-OurProjects">
+                                Empresas podem ganhar destaque com <span style={{color: '#ff9800', fontWeight: 'bold'}}>naming rights</span>,
+                                associando sua marca a projetos de impacto social, enquanto recebem <span
+                                style={{color: '#ff9800', fontWeight: 'bold'}}>certificados de impacto</span> que
+                                comprovam resultados como famílias atendidas, empregos gerados e CO₂ evitado. Projetos
+                                com energia renovável geram <span style={{color: '#ff9800', fontWeight: 'bold'}}>créditos de carbono</span>,
+                                que podem ser comercializados ou usados para compensações ambientais.</p>
+
+                            <p className="text-OurProjects">Além disso, <span
+                                style={{color: '#ff9800', fontWeight: 'bold'}}>negociamos isenções fiscais</span> junto
+                                a governos para maximizar o retorno às empresas parceiras, ampliando o impacto social
+                                sem comprometer seus recursos financeiros. Atuamos como facilitadores, cobrando
+                                uma <span style={{
+                                    color: '#ff9800',
+                                    fontWeight: 'bold'
+                                }}>pequena taxa de intermediação</span> para garantir eficiência, transparência e
+                                resultados.</p>
+                            <p className="text-OurProjects">
+                                Nosso impacto vai além da eletricidade. Oferecemos <span
+                                style={{color: '#ff9800', fontWeight: 'bold'}}>capacitação técnica às comunidades</span>,
+                                formando mão de obra para instalar e manter os sistemas, criando empregos e promovendo
+                                autonomia local.
+                            </p>
+                            <p className="text-OurProjects">
+                                É mais do que eletricidade: é transformação social, ganhos financeiros e destaque no
+                                mercado. Vamos juntos iluminar comunidades e construir um futuro sustentável?
+                            </p>
+                            <p className="text-OurProjects">
+                                <span style={{color: '#ff9800', fontWeight: 'bold'}}> Quer saber mais sobre quem será beneficiado por este projeto? Confira abaixo algumas histórias e perfis das comunidades que podem ser transformadas. </span>
+                            </p>
+                        </Col>
+                        <Col xs={12} md={6} className='image-container'>
+                            <Image className='ProjectImg' src={require('../../assets/village3.jpg')} fluid/>
+                        </Col>
+                    </Row>
+                </Container>
+            </div>
+            <div className='our-project'>
+                <Container fluid>
+                <Row className='justify-content-center align-items-center'>
                         <Col xs={12} md={4} className='text-container'>
                             <h1 className="title-OurProjects">População Sem Acesso à Energia</h1>
                             <p className="text-OurProjects">
@@ -120,7 +169,12 @@ export const OurProjects = () => {
                                 desigualdades sociais. </p>
 
                             <p className="text-OurProjects">A <span
-                                style={{color: '#ff9800', fontWeight: 'bold'}}>Sustentare</span> atua para transformar essa realidade, levando energia renovável e soluções acessíveis a regiões onde o potencial produtivo está sufocado pela falta de infraestrutura básica. Ao impulsionar atividades econômicas locais e abrir novas perspectivas para as famílias, a Sustentare mostra que a energia é mais do que uma necessidade – é uma ponte para a autonomia e o progresso. "Onde há energia, há força para prosperar."</p>
+                                style={{color: '#ff9800', fontWeight: 'bold'}}>Sustentare</span> atua para transformar
+                                essa realidade, levando energia renovável e soluções acessíveis a regiões onde o
+                                potencial produtivo está sufocado pela falta de infraestrutura básica. Ao impulsionar
+                                atividades econômicas locais e abrir novas perspectivas para as famílias, a Sustentare
+                                mostra que a energia é mais do que uma necessidade – é uma ponte para a autonomia e o
+                                progresso. "Onde há energia, há força para prosperar."</p>
                         </Col>
                         <Col xs={12} md={6} className='image-container'>
                             <Image className='ProjectImg' src={require('../../assets/solarpark.jpg')} fluid/>
@@ -146,7 +200,6 @@ export const Projeto = () => {
                 <Navbar backgroundColor="#231f20" iconColor="#fff"/>
                 <HeaderProject/>
                 <OurProjects/>
-                <Footer backgroundColor="#231f20"/>
             </>}
         />
     </Routes>);

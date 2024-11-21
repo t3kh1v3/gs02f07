@@ -40,13 +40,13 @@ export const Navbar = ({ backgroundColor = "#fff", iconColor = "#000" }) => {
               <a href="/Sobre">Sobre Nós</a>
             </li>
             <li>
-              <a href="/Problema">O Problema</a>
+              <a href="/Desafios">Desafios</a>
             </li>
             <li>
-              <a href="/Projeto">A Solução</a>
+              <a href="/Projeto">O Projeto</a>
             </li>
             <li>
-              <a href="/Contato">Contribua</a>
+              <a href="/Aplicativo">Aplicativo</a>
             </li>
           </ul>
         </Offcanvas.Body>
