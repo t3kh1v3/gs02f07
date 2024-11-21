@@ -67,11 +67,36 @@ const InvestorDashboardContent = () => {
                 Créditos de Carbono: <strong>25 ton</strong>
                 </p>
             </div>
+            <div className="timeline-container">
+        <h2 className="timeline-title">Progresso dos Projetos</h2>
+        <div className="timeline">
+            <div className="timeline-item planned">
+            <div className="status-label">Planejado</div>
+            <div className="progress-bar">
+                <div className="progress" style={{ width: '20%' }}></div>
+            </div>
+            <p className="percentage">20% Executado</p>
+            </div>
+
+            <div className="timeline-item in-progress">
+            <div className="status-label">Em Andamento</div>
+            <div className="progress-bar">
+                <div className="progress" style={{ width: '60%' }}></div>
+            </div>
+            <p className="percentage">60% Executado</p>
+            </div>
+
+            <div className="timeline-item completed">
+            <div className="status-label">Concluído</div>
+            <div className="progress-bar">
+                <div className="progress" style={{ width: '100%' }}></div>
+            </div>
+            <p className="percentage">100% Executado</p>
+            </div>
+        </div>
+        </div>
         </div>
     </div>
-
-        
-
     );
   };
 
@@ -123,6 +148,59 @@ export const ONGsDashboardContent = () => {
                 </div>
             </div>
         </div>
+        <div className="impact-container">
+      <h2 className="impact-title">Gestão de Impacto</h2>
+
+      {/* Tabela de Serviços Essenciais */}
+      <div className="services-table">
+        <h3 className="table-title">Serviços Essenciais Oferecidos</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>Serviço</th>
+              <th>Comunidades Atendidas</th>
+              <th>Beneficiários</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Educação</td>
+              <td>12</td>
+              <td>3,500</td>
+            </tr>
+            <tr>
+              <td>Saúde</td>
+              <td>15</td>
+              <td>5,200</td>
+            </tr>
+            <tr>
+              <td>Energia</td>
+              <td>8</td>
+              <td>1,800</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      {/* Indicadores de Eficiência Energética */}
+      <div className="efficiency-indicators">
+        <h3 className="indicators-title">Indicadores de Eficiência Energética</h3>
+        <div className="indicators">
+          <div className="indicator">
+            <p className="indicator-label">Energia Renovável</p>
+            <p className="indicator-value">85%</p>
+          </div>
+          <div className="indicator">
+            <p className="indicator-label">Redução de Emissões</p>
+            <p className="indicator-value">22%</p>
+          </div>
+          <div className="indicator">
+            <p className="indicator-label">Uso de Energia</p>
+            <p className="indicator-value">78%</p>
+          </div>
+        </div>
+      </div>
+    </div>
     </div>
 </div>        
     );
