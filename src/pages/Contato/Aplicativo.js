@@ -10,19 +10,9 @@ export const HeaderDashboard = () => {
         <div className="dashboard-header-background">
             <Container fluid>
                 <Row className='justify-content-center'>
-                    <Col className='div-seach' xs='4'>
-                        <div className="content-container" id='op'>
-                            <p className="top-subtitle-dashboard">Conheça</p>
-                        </div>
-                    </Col>
                     <Col className='div-seach' xs='11'>
                         <div className="title-container-dashboard">
-                            <h1 className="title-dashboard">Nossos Resultados</h1>
-                        </div>
-                    </Col>
-                    <Col className='div-seach' xs='4'>
-                        <div className="content-container" id='op'>
-                            <p className="subtitle-dashboard">Sustentare Inc</p>
+                            <h1 className="title-dashboard">Aplicativo</h1>
                         </div>
                     </Col>
                 </Row>
@@ -85,7 +75,6 @@ const InvestorDashboardContent = () => {
             </div>
             <p className="percentage">60% Executado</p>
             </div>
-
             <div className="timeline-item completed">
             <div className="status-label">Concluído</div>
             <div className="progress-bar">

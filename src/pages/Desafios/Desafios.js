@@ -20,11 +20,6 @@ export const HeaderVAf = () => {
                         <h1 className="title-vitAff">Realidade</h1>
                     </div>
                 </Col>
-                <Col className='div-seach' xs='4'>
-                    <div className="content-container" id='op'>
-                        <p className="subtitle-vitAff">Sustentare Inc</p>
-                    </div>
-                </Col>
             </Row>
         </Container>
     </div>

@@ -20,11 +20,11 @@ export const HeaderSobre = () => {
                             <h1 className="title-about">Nossa História</h1>
                         </div>
                     </Col>
-                    <Col className='div-seach' xs='4'>
+                    {/*<Col className='div-seach' xs='4'>
                         <div className="content-container" id='op'>
                             <p className="subtitle-about">Sustentare Inc</p>
                         </div>
-                    </Col>
+                    </Col>*/}
                 </Row>
             </Container>
         </div>

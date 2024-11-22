@@ -19,11 +19,6 @@ export const HeaderProject = () => {
                         <h1 className="title-project">Nosso Projeto</h1>
                     </div>
                 </Col>
-                <Col className='div-seach' xs='4'>
-                    <div className="content-container" id='op'>
-                        <p className="subtitle-project">Sustentare Inc</p>
-                    </div>
-                </Col>
             </Row>
         </Container>
     </div>);
