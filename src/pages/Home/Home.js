@@ -125,7 +125,7 @@ export const VideoPitch = () => {
                 <iframe
                     width="75%"
                     height="750"
-                    src="https://www.youtube.com/embed/ea08mJUU9Y4?si=SRrDZ3XitsQd-9Bt"
+                    src="https://www.youtube.com/embed/WlTauJdjz98?si=piwN4BSbM5POlelQ"
                     title="YouTube video player"
                     frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"

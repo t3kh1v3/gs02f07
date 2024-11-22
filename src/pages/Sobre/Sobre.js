@@ -87,7 +87,7 @@ export const VictimsAffected = () => {
                         e esperança a essas famílias, promovendo transformação social por meio da energia limpa.
                         </p>
                         <div className='button-vAff'>
-                            <Button as={ Link } to="/Social" variant="outline-dark" className="vAff-button">Saiba Mais</Button>
+                            <Button as={ Link } to="/Desafios" variant="outline-dark" className="vAff-button">Saiba Mais</Button>
                         </div>
                     </Col>
                     

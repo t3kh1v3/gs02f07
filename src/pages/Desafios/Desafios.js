@@ -1,8 +1,8 @@
 import './Desafios.css';
+import { useEffect } from "react";
 import { Route, Routes } from 'react-router-dom';
 import { Container, Row, Col, Image, Button } from 'react-bootstrap';
 import { Link } from 'react';
-import { Footer } from '../../components/Footer/Footer'
 import { Navbar } from '../../components/Navbar/Navbar'
 
 export const HeaderVAf = () => {
@@ -154,7 +154,7 @@ export const TheSolution = () => {
                 <Col xs={12} md={4} className='text-container'>
                     <h1 className="title-theSolution">Conheça a Solução</h1>
                     <div className='button-theSolution'>
-                        <Button as={ Link } to="/Social" variant="outline-dark" className="theSolution-button">Saiba Mais</Button>
+                        <Button as={ Link } to="/Projeto" variant="outline-dark" className="theSolution-button">Saiba Mais</Button>
                     </div>
                 </Col>
             </Row>
@@ -164,6 +164,11 @@ export const TheSolution = () => {
 };
 
 export const Desafios = () => {
+
+    useEffect(() => {
+        window.scrollTo(0, 0);
+        }, []);
+
     return (
         <Routes>
             <Route
